@@ -1,0 +1,16 @@
+*{margin: 0;}
+
+body{overflow: hidden;
+}
+
+main{width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url(Devinette/fond.PNG);}
+
+img{position: absolute;
+height: 100vh;}
+
+.bureau{width: 100vw;}
