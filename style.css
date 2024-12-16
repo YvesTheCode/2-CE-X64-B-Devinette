@@ -1,5 +1,6 @@
 *{margin: 0;
-font-family: monospace;}
+font-family: monospace;
+box-sizing: border-box;}
 
 html{font-size: 1vh;}
 
@@ -22,12 +23,13 @@ pointer-events: none;}
 width: 71vh;
 height: 55%;
 margin-right: 39vh;
-background-color: black;}
+background-color: black;
+padding-left:1.5% ;
+padding-top:1.25% ;}
 
-.text{color: greenyellow;
+.ecran p{color: greenyellow;
 font-size: 2rem;
-margin-left: 4%;
-margin-top: 4%;}
+line-height: 3rem;}
 
 .reveil{position: absolute;
 width: 44vh;
@@ -37,7 +39,7 @@ bottom: 14vh;
 margin-left: 48vh;
 color: red;}
 
-.repond{appearance: none;
+#repond{appearance: none;
 outline: none;
 border: none;
 width: 37vh;
@@ -49,7 +51,7 @@ background-color: black;
 font-size: 8rem;
 transform: skewY(-2deg);}
 
-.butt{position: absolute;
+#butt{position: absolute;
 width: 7.45vh;
 height: 7.45vh;
 margin-left: 59.5vh;
@@ -59,5 +61,5 @@ border: none;
 background-color: rgba(255, 0, 0, 0);
 opacity: 0.5;}
 
-.butt:hover{cursor: pointer;
-    background-color: rgba(255, 199, 199, 0.432);}
+#butt:hover{cursor: pointer;
+background-color: rgba(255, 199, 199, 0.432);}
