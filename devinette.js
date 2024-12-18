@@ -35,14 +35,16 @@ let max = 100;
 let nombreMystere = Math.floor(Math.random() * max) + min;
 let tentative = 0;
 
-const text = document.getElementById("text");
+// const text = document.getElementById("text");
 const butt = document.getElementById("butt");
 const repond = document.getElementById("repond");
-const indice = document.getElementById("indice");
-const essais = document.getElementById("essais");
+// const indice = document.getElementById("indice");
+// const essais = document.getElementById("essais");
 
-text.textContent="Bienvenue au jeu de devinette de nombre !"
-indice.textContent ="Il se trouve entre "+min+" & "+max
+let ligne = ["ligne0",ligne1, ligne2, ligne3, ligne4, ligne5, ligne6, ligne7, ligne8, ligne9, ligne10, ligne11, ligne12, ligne13, ligne14, ligne15, ligne16, ligne17]
+
+ligne[2].innerHTML="Bienvenue au jeu de devinette de nombre !"
+ligne[4].innerHTML ="Il se trouve entre "+min+" & "+max
 butt.value=""
 
 
@@ -55,24 +57,24 @@ butt.addEventListener("click",function(){
 
     // alert(nombreMystere)
     if (isNaN(tonchoix)) {
-        text.textContent="Devinette de >>>NOMBRE<<<"
-        indice.textContent="Trop nul"
+        ligne[2].innerHTML="Devinette de >>>NOMBRE<<<"
+        ligne[4].innerHTML="Trop nul"
     } 
     
     else if(tonchoix < nombreMystere){
-        indice.textContent="trop petit"
+        ligne[4].innerHTML= "Trop petit"
     }
 
     else if(tonchoix > nombreMystere){
-        indice.textContent="trop grand"
+        ligne[4].innerHTML="Trop grand"
     }
 
     else {
-        text.innerHTML="Tu as trouvé en seulement "+ tentative +" tentatives.<br> Rejoue dés maintenant !"
-        indice.textContent="Trop fort"
+        ligne[2].innerHTML="Tu as trouvé en seulement "+ tentative +" tentatives. Rejoue dés maintenant !"
+        ligne[4].innerHTML="Trop fort"
         nombreMystere = Math.floor(Math.random() * max) + min;
         tentative=0
         // alert(nombreMystere)
     }
-        essais.textContent = "Nombre d'essais : "+tentative
+        ligne[16].innerHTML = "Nombre d'essais : "+tentative
 });

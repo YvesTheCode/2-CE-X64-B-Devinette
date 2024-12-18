@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Press+Start+2P&family=VT323&display=swap');
+
+@font-face {
+    font-family:'digital' ;
+    src: url(ds_digital/DS-DIGI.TTF);
+}
+
 *{margin: 0;
 font-family: monospace;
-box-sizing: border-box;}
+box-sizing: border-box;
+font-family: "VT323", monospace;}
 
 html{font-size: 1vh;}
 
@@ -24,12 +32,12 @@ width: 71vh;
 height: 55%;
 margin-right: 39vh;
 background-color: black;
-padding-left:1.5% ;
-padding-top:1.25% ;}
+padding-left:2.5rem;
+padding-top:2rem ;}
 
 .ecran p{color: greenyellow;
-font-size: 2rem;
-line-height: 3rem;}
+font-size: 2.5rem;
+line-height: 2.95rem;}
 
 .reveil{position: absolute;
 width: 44vh;
@@ -48,8 +56,9 @@ margin-top: 6.5%;
 margin-left: 10%;
 color: red;
 background-color: black;
-font-size: 8rem;
-transform: skewY(-2deg);}
+font-size: 10rem;
+transform: skewY(-2deg);
+font-family: 'digital';}
 
 #butt{position: absolute;
 width: 7.45vh;
@@ -63,3 +72,5 @@ opacity: 0.5;}
 
 #butt:hover{cursor: pointer;
 background-color: rgba(255, 199, 199, 0.432);}
+
+#pif{color: white;}
