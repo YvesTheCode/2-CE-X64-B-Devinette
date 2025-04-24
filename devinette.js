@@ -23,7 +23,6 @@ butt.addEventListener("click",function(){
 
     ++tentative
 
-    alert(nombreMystere)
     if (isNaN(tonchoix)) {
         ligne[2].innerHTML="Devinette de >>>NOMBRE<<<"
         ligne[4].innerHTML="Trop nul"
@@ -54,7 +53,6 @@ butt.addEventListener("click",function(){
         ligne[4].innerHTML="Le nouveau nombre se trouve entre "+min+" & "+max
         nombreMystere = Math.floor(Math.random() * (max-min + 1)) + min;
         tentative=0
-        alert(nombreMystere)
     }
         ligne[16].innerHTML = "Nombre d'essais : "+tentative
 });
